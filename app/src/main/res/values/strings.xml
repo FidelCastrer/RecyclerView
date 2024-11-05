@@ -1,0 +1,28 @@
+<resources>
+	<string name="app_name">RecyclerViewTest</string>
+	
+	<string-array name="couleur">
+		<item>Rouge</item>
+		<item>Vert</item>
+		<item>Jaune</item>
+		<item>Violet</item>
+		<item>Bleu</item>
+		<item>Gris</item>
+		<item>Orange</item>
+		<item>Rose</item>
+		<item>Cyan</item>
+		<item>Marron</item>
+	</string-array>
+	<string-array name="desc">
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+		<item>Belle bite Shinji</item>
+	</string-array>
+</resources>
