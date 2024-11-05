@@ -1,7 +1,7 @@
 <resources>
 	<string name="app_name">RecyclerViewTest</string>
 	
-	<string-array name="couleur">
+	<string-array name="color">
 		<item>Rouge</item>
 		<item>Vert</item>
 		<item>Jaune</item>
@@ -13,16 +13,17 @@
 		<item>Cyan</item>
 		<item>Marron</item>
 	</string-array>
+	
 	<string-array name="desc">
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
-		<item>Belle bite Shinji</item>
+		<item>Red Hot Chili Pepper</item>
+		<item>Green Tea</item>
+		<item>Yellow Temperence</item>
+		<item>Purple Haze</item>
+		<item>Dark Blue Moon</item>
+		<item>Tower of Gray</item>
+		<item>Pearl Jam</item>
+		<item>Pink Dark Boy</item>
+		<item>Stone Free</item>
+		<item>Smokey Brown</item>
 	</string-array>
 </resources>

@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView rv_couleurs;
+    RecyclerView rv_colors;
 
-    String[] titres;
+    String[] titles;
     String[] descriptions;
     int[] images = {R.drawable.rouge, R.drawable.vert, R.drawable.jaune, R.drawable.violet, R.drawable.bleu, R.drawable.gris, R.drawable.orange, R.drawable.rose, R.drawable.cyan, R.drawable.marron };
 
@@ -26,15 +26,15 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        rv_couleurs = findViewById(R.id.rv_couleurs);
+        rv_colors = findViewById(R.id.rv_colors);
 
-        titres = getResources().getStringArray(R.array.couleur);
+        titles = getResources().getStringArray(R.array.color);
         descriptions = getResources().getStringArray(R.array.desc);
 
-        CouleursAdapter couleursAdapter = new CouleursAdapter(this, titres, descriptions, images);
-        rv_couleurs.setHasFixedSize(true);
-        rv_couleurs.setAdapter(couleursAdapter);
-        rv_couleurs.setLayoutManager(new LinearLayoutManager(this));
+        CouleursAdapter couleursAdapter = new CouleursAdapter(this, titles, descriptions, images);
+        rv_colors.setHasFixedSize(true);
+        rv_colors.setAdapter(couleursAdapter);
+        rv_colors.setLayoutManager(new LinearLayoutManager(this));
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

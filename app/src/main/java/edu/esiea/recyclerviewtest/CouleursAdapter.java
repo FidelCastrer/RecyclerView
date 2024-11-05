@@ -14,27 +14,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class CouleursAdapter extends RecyclerView.Adapter<CouleursAdapter.CouleursViewHolder> {
 
-    String[] titre_couleur;
-    String[] description_couleur;
+    String[] color_title;
+    String[] color_description;
     int[] images;
     Context context;
 
     public CouleursAdapter(Context ct, String[] titre, String[] description, int[] img) {
         context = ct;
-        titre_couleur = titre;
-        description_couleur = description;
+        color_title = titre;
+        color_description = description;
         images = img;
     }
 
     public static class CouleursViewHolder extends RecyclerView.ViewHolder{
-        TextView titreCouleur, descriptionCouleur;
-        ImageView imageCouleur;
+        TextView colorTitle, colorDescription;
+        ImageView colorImage;
         ConstraintLayout mainLayout;
         public CouleursViewHolder(@NonNull View itemView) {
             super(itemView);
-            titreCouleur = itemView.findViewById(R.id.titre_couleur);
-            descriptionCouleur = itemView.findViewById(R.id.description_couleur);
-            imageCouleur = itemView.findViewById(R.id.img_couleur);
+            colorTitle = itemView.findViewById(R.id.color_title);
+            colorDescription = itemView.findViewById(R.id.color_description);
+            colorImage = itemView.findViewById(R.id.color_image);
             mainLayout = itemView.findViewById(R.id.mainLayout);
         }
     }
@@ -49,15 +49,15 @@ public class CouleursAdapter extends RecyclerView.Adapter<CouleursAdapter.Couleu
 
     @Override
     public void onBindViewHolder(@NonNull CouleursAdapter.CouleursViewHolder holder, int position) {
-        holder.titreCouleur.setText(titre_couleur[position]);
-        holder.descriptionCouleur.setText(description_couleur[position]);
-        holder.imageCouleur.setImageResource(images[position]);
+        holder.colorTitle.setText(color_title[position]);
+        holder.colorDescription.setText(color_description[position]);
+        holder.colorImage.setImageResource(images[position]);
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, SecondActivity.class);
-                intent.putExtra("titre_couleur", titre_couleur[holder.getAdapterPosition()]);
-                intent.putExtra("description_couleur", description_couleur[holder.getAdapterPosition()]);
+                intent.putExtra("color_title", color_title[holder.getAdapterPosition()]);
+                intent.putExtra("color_description", color_description[holder.getAdapterPosition()]);
                 intent.putExtra("image_couleur", images[holder.getAdapterPosition()]);
                 context.startActivity(intent);
             }

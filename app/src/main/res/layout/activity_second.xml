@@ -20,13 +20,13 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="titleReceived"
-		app:layout_constraintBottom_toTopOf="@+id/descriptionreceived"
+		app:layout_constraintBottom_toTopOf="@+id/descriptionReceived"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/imageReceived" />
 	
 	<TextView
-		android:id="@+id/descriptionreceived"
+		android:id="@+id/descriptionReceived"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="Description"

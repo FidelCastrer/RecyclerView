@@ -23,18 +23,18 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void getData() {
-        if (getIntent().hasExtra("titre_couleur") && getIntent().hasExtra("description_couleur") && getIntent().hasExtra("image_couleur")) {
+        if (getIntent().hasExtra("color_title") && getIntent().hasExtra("color_description") && getIntent().hasExtra("color_image")) {
             Log.i("Ye","On est dedans");
 
-            String titre = getIntent().getStringExtra("titre_couleur");
-            String description = getIntent().getStringExtra("description_couleur");
-            int image = getIntent().getIntExtra("image_couleur", 0);
+            String title = getIntent().getStringExtra("color_title");
+            String description = getIntent().getStringExtra("color_description");
+            int image = getIntent().getIntExtra("color_image", 0);
 
             TextView t = findViewById(R.id.titleReceived);
-            TextView d = findViewById(R.id.descriptionreceived);
+            TextView d = findViewById(R.id.descriptionReceived);
             ImageView i = findViewById(R.id.imageReceived);
 
-            t.setText(titre);
+            t.setText(title);
             d.setText(description);
             i.setImageResource(image);
         }
