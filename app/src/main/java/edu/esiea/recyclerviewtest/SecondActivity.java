@@ -24,7 +24,6 @@ public class SecondActivity extends AppCompatActivity {
 
     private void getData() {
         if (getIntent().hasExtra("color_title") && getIntent().hasExtra("color_description") && getIntent().hasExtra("color_image")) {
-            Log.i("Ye","On est dedans");
 
             String title = getIntent().getStringExtra("color_title");
             String description = getIntent().getStringExtra("color_description");
@@ -39,7 +38,7 @@ public class SecondActivity extends AppCompatActivity {
             i.setImageResource(image);
         }
         else {
-            Log.d("Missing Data", String.valueOf(getIntent()));
+            Log.e("Missing Data","title : "+getIntent().getStringExtra("color_title")+" || desc : "+getIntent().getStringExtra("color_description")+" || image : "+getIntent().getStringExtra("color_image"));
         }
     }
 }

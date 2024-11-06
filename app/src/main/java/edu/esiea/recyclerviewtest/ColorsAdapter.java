@@ -58,7 +58,7 @@ public class ColorsAdapter extends RecyclerView.Adapter<ColorsAdapter.CouleursVi
                 Intent intent = new Intent(context, SecondActivity.class);
                 intent.putExtra("color_title", color_title[holder.getAdapterPosition()]);
                 intent.putExtra("color_description", color_description[holder.getAdapterPosition()]);
-                intent.putExtra("image_couleur", images[holder.getAdapterPosition()]);
+                intent.putExtra("color_image", images[holder.getAdapterPosition()]);
                 context.startActivity(intent);
             }
         });
