@@ -12,14 +12,14 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class CouleursAdapter extends RecyclerView.Adapter<CouleursAdapter.CouleursViewHolder> {
+public class ColorsAdapter extends RecyclerView.Adapter<ColorsAdapter.CouleursViewHolder> {
 
     String[] color_title;
     String[] color_description;
     int[] images;
     Context context;
 
-    public CouleursAdapter(Context ct, String[] titre, String[] description, int[] img) {
+    public ColorsAdapter(Context ct, String[] titre, String[] description, int[] img) {
         context = ct;
         color_title = titre;
         color_description = description;
@@ -41,14 +41,14 @@ public class CouleursAdapter extends RecyclerView.Adapter<CouleursAdapter.Couleu
 
     @NonNull
     @Override
-    public CouleursAdapter.CouleursViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ColorsAdapter.CouleursViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.recyclerview_item, parent, false);
         return new CouleursViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CouleursAdapter.CouleursViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ColorsAdapter.CouleursViewHolder holder, int position) {
         holder.colorTitle.setText(color_title[position]);
         holder.colorDescription.setText(color_description[position]);
         holder.colorImage.setImageResource(images[position]);

@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         titles = getResources().getStringArray(R.array.color);
         descriptions = getResources().getStringArray(R.array.desc);
 
-        CouleursAdapter couleursAdapter = new CouleursAdapter(this, titles, descriptions, images);
+        ColorsAdapter colorsAdapter = new ColorsAdapter(this, titles, descriptions, images);
         rv_colors.setHasFixedSize(true);
-        rv_colors.setAdapter(couleursAdapter);
+        rv_colors.setAdapter(colorsAdapter);
         rv_colors.setLayoutManager(new LinearLayoutManager(this));
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
